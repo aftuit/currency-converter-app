@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Code+Pro&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EDEEF0;
+    overflow: hidden;
+    button.btn:focus, button.btn:active{
+        box-shadow: none;
+        border: 0;
+    }
+    .form-control:focus, .form-control:active{
+        box-shadow: none;
+        border: 0;
+    }
+    nav{
+        background-color: #F5F6F8;
+        box-shadow: 0 0 8px lightslategrey;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        .navbar-brand{
+            img{
+                width: 40px;
+            }
+        }
+        
+    }
+    .components-wrap{
+        display: flex;
+        overflow-y: auto;
+        margin: 20px auto;
+        padding: 20px 50px;
+        .add__currence__wrap{
+            width: 30%;
+            position: relative;
+            .add_currency_box{
+                background-color: #ffffff;
+                width: 100%;
+                padding: 20px;
+                border-radius: 0;
+            box-shadow: 0 0 10px #a5a3a3;
+
+            }
+            .convert__link{
+                position: absolute;
+                right: 0;
+                bottom: 25%;
+                padding: 5px 10px;
+                background-color: rgb(39, 137, 218);
+                color: #ffffff;
+                margin-top: 20px;
+                display: inline-block;
+            }
+        }
+        .List-box{
+            width: 90%;
+            height: 70vh;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgb(212, 210, 210);
+            padding: 15px;
+            margin-left: 30px;
+            .buttons{
+                button{
+                    border: 1px solid #cfc4c4;
+                    color: #2789DA;
+                    transition: all 0.1s linear;
+                    &:hover{
+                        // transform: translateY(-1px);
+                        box-shadow: 0 2px 5px rgb(200, 200, 200);
+                    }
+                    &:active{
+                        box-shadow: 0 2px 6px rgb(138, 136, 136);
+                    }
+                }
+
+            }
+            .list-wrapper{
+                height: 75%;
+                overflow-y: auto;
+                background-color: #F5F6F8;
+                h3{
+                    color: rgb(190, 189, 189);
+                }
+                table{
+                    width: 100%;
+                    tbody{
+                        
+                    tr{
+                        margin: 7px auto;
+                        background-color: rgba(355,255,255,0.8);
+                        width: 80%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        td{                            
+                            border: 1px solid #dddbdb;
+                            padding: 6px;
+                            border-radius: 4px;
+                            box-shadow: 0 4px 3px lightgrey;
+                            button.btn{
+                                padding: 0;
+                            }
+                        }
+                    }
+                   }
+                }
+            }
+        }
+    }
+
+    .container{
+        .result{
+            padding: 22px;
+            border: 1px solid rgb(228, 222, 222);
+            width: fit-content;
+            background: #fff;
+            border-radius: 4px;
+            font-family: 'Source Code Pro', monospace;
+            margin-top: 30px;
+            span{
+                display:  block;
+                color: grey;
+            }
+        }
+    }
+
+    .not-found{
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        overflow: hidden;
+        .row{
+            align-items: center;
+            h1{
+                font-size: 100px;
+                font-weight: 900;
+            }
+            p{
+                font-size: 40px;
+            }
+            a{
+                border: 1px solid rgb(114, 113, 113);
+                padding: 10px 20px;
+                transition: all 0.2s linear;
+                color: rgb(114, 113, 113);
+                &:hover{
+                    background-color: rgb(114, 113, 113);
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
